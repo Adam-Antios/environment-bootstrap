@@ -3,8 +3,8 @@
 notebooks_dir="$HOME/Notebooks"
 
 if [ ! -d "$notebooks_dir" ]; then
-    echo "Notebooks directory does not exist: $notebooks_dir" >&2
-    exit 1
+    echo "Notebooks directory does not exist. Creating: $notebooks_dir"
+    mkdir -p "$notebooks_dir"
 fi
 
 cd "$notebooks_dir" || exit 1
