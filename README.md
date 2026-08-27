@@ -28,7 +28,7 @@ curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/ref
 source ~/.zshrc
 ```
 
-## Branching Strategy
+## Git Pull Request
 
 To create a branch with a specific name and commit it with a matching message, use the following command. This is ideal for preparing changes before opening a pull request:
 
