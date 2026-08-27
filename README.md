@@ -30,6 +30,8 @@ source ~/.zshrc
 
 ## Branching Strategy
 
+To create a branch with a specific name and commit it with a matching message, use the following command. This is ideal for preparing changes before opening a pull request:
+
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash -s -- [filename]
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash -s -- [name]
 ```
