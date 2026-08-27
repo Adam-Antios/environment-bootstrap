@@ -27,3 +27,9 @@ printf '\n' >> ~/.zshrc && \
 curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/shellcraft.sh >> ~/.zshrc && \
 source ~/.zshrc
 ```
+
+## Branching Strategy
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash -s -- [filename]
+```
