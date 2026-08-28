@@ -30,8 +30,14 @@ source ~/.zshrc
 
 ## Send Pull Request
 
-To create a branch with a specific name and commit it with a matching message, use the following command. This is ideal for preparing changes before opening a pull request:
+To create a branch for a file and commit it with the file path as the commit message, use the following command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash -s -- [name]
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash -s -- path/to/file
+```
+
+To use a date as the branch name and commit message, pass it as the second argument. The branch name uses a safe version of the date:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash -s -- path/to/file "$(date -Iseconds)"
 ```
