@@ -1,3 +1,8 @@
+# ---------------------------------------------------------------------------
+# This script is intended only for creating pull requests within the
+# ISMS-PIMS Git repository.
+# ---------------------------------------------------------------------------
+
 #!/usr/bin/env bash
 set -euo pipefail
 

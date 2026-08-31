@@ -1,3 +1,8 @@
+# ---------------------------------------------------------------------------
+# This script creates the local Notebooks and Compliance directories, then
+# clones the required Git repositories into them if they do not already exist.
+# ---------------------------------------------------------------------------
+
 #!/usr/bin/env bash
 
 # Notebooks
