@@ -14,11 +14,12 @@ if [ "${#changed_files[@]}" -ne 1 ]; then
 fi
 
 file="${changed_files[0]}"
+dir="$(basename "$(dirname "$file")")"
 name="$(basename "$file")"
 name_without_extension="${name%.*}"
-branch="add-${name_without_extension}"
+branch="add-${dir}-${name_without_extension}"
 
 git switch -c "$branch"
 git add "$file"
-git commit -m "Add ${name_without_extension}"
+git commit -m "Add ${dir} ${name_without_extension}"
 git push -u origin HEAD

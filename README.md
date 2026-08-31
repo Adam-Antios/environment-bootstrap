@@ -13,5 +13,5 @@ curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/r
 To create a branch for one file and commit it with the filename as the commit message, thus initiating a pull request, run the following:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/refs/heads/main/scripting/pullrequst.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/refs/heads/main/scripting/pullrequest.sh | bash
 ```
