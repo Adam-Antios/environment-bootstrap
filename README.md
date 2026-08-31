@@ -8,7 +8,7 @@ To append the shared shell configuration to your local shell startup file, use t
 
 ```bash
 printf '\n' >> ~/.bashrc && \
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/shellcraft.sh >> ~/.bashrc && \
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/refs/heads/main/shellenvs/shellcraft.sh >> ~/.bashrc && \
 source ~/.bashrc
 ```
 
@@ -16,7 +16,7 @@ source ~/.bashrc
 
 ```bash
 printf '\n' >> ~/.zshrc && \
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/shellcraft.sh >> ~/.zshrc && \
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/refs/heads/main/shellenvs/shellcraft.sh >> ~/.zshrc && \
 source ~/.zshrc
 ```
 
