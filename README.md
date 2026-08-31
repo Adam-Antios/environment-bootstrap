@@ -1,11 +1,11 @@
 # README
 
-## Notebooks Workspace
+## Clone Repositories
 
-To set up the **Notebooks workspace**, run the following command in your terminal:
+To clone necessary Git repositories, run the following command in your terminal:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/refs/heads/main/scripting/notebooks.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/refs/heads/main/scripting/repositories.sh | bash
 ```
 
 ## Send Pull Request
