@@ -16,3 +16,4 @@ function cmt {
 
 alias vsc='code-insiders .'
 alias ntb="code-insiders ~/Notebooks"
+alias sec="code-insiders ~/Compliance"

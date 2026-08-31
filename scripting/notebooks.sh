@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Notebooks
+# =========
+
 notebooks_dir="$HOME/Notebooks"
 
 if [ ! -d "$notebooks_dir" ]; then
@@ -17,6 +20,35 @@ repos=(
 )
 
 for repo in "${repos[@]}"; do
+    dir="$(basename "$repo" .git)"
+
+    if [ -d "$dir/.git" ]; then
+        echo "Skipping $dir: repository already exists."
+    else
+        echo "Cloning $dir..."
+        git clone "$repo"
+    fi
+done
+
+# Compliance
+# ==========
+
+compliance_dir="$HOME/Compliance"
+
+if [ ! -d "$compliance_dir" ]; then
+    echo "Compliance directory does not exist. Creating: $compliance_dir"
+    mkdir -p "$compliance_dir"
+fi
+
+cd "$compliance_dir" || exit 1
+
+compliance_repos=(
+    "pdneurotechnology@vs-ssh.visualstudio.com:v3/pdneurotechnology/ISMS-PIMS/records"
+    "pdneurotechnology@vs-ssh.visualstudio.com:v3/pdneurotechnology/ISMS-PIMS/develop"
+    "pdneurotechnology@vs-ssh.visualstudio.com:v3/pdneurotechnology/ISMS-PIMS/release"
+)
+
+for repo in "${compliance_repos[@]}"; do
     dir="$(basename "$repo" .git)"
 
     if [ -d "$dir/.git" ]; then
