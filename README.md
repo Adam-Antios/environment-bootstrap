@@ -1,13 +1,5 @@
 # README
 
-## Notebooks Workspace
-
-To set up the **Notebooks workspace**, run the following command in your terminal:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/notebooks.sh | bash
-```
-
 ## Shell Configuration
 
 To append the shared shell configuration to your local shell startup file, use the command that matches your shell.
@@ -28,16 +20,18 @@ curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/ref
 source ~/.zshrc
 ```
 
-## Send Pull Request
+## Notebooks Workspace
 
-To create a branch for one file and commit it with the file path as the commit message, pass a file path:
+To set up the **Notebooks workspace**, run the following command in your terminal:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash -s -- path/to/file
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/refs/heads/main/scripting/notebooks.sh | bash
 ```
 
-To create a branch from the current date, stage all current changes, and commit them with the date as the commit message, pass the literal `date` flag. The branch name uses a safe version of `date -Iseconds`:
+## Send Pull Request
+
+To create a branch for one file and commit it with the filename as the commit message, run the following:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/refs/heads/main/scripting/branching.sh | bash
 ```

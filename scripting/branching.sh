@@ -20,5 +20,5 @@ branch="add-${name_without_extension}"
 
 git switch -c "$branch"
 git add "$file"
-# git commit -m "Add ${name_without_extension}"
-# git push -u origin HEAD
+git commit -m "Add ${name_without_extension}"
+git push -u origin HEAD
