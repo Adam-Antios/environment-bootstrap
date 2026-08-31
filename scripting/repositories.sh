@@ -21,7 +21,7 @@ repos=(
     "git@github.com:Adam-Antios/professional-workbench.git"
     "git@github.com:Adam-Antios/development-handbook.git"
     "git@github.com:Adam-Antios/trumaneu-management.git"
-    "git@github.com:Adam-Antios/workspace-bootstrap.git"
+    "git@github.com:Adam-Antios/environment-bootstrap.git"
 )
 
 for repo in "${repos[@]}"; do
