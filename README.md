@@ -39,5 +39,5 @@ curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/ref
 To create a branch from the current date, stage all current changes, and commit them with the date as the commit message, pass the literal `date` flag. The branch name uses a safe version of `date -Iseconds`:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash -s -- date
+curl -fsSL https://raw.githubusercontent.com/Adam-Antios/workspace-bootstrap/refs/heads/main/scripting/branching.sh | bash
 ```
