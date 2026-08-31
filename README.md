@@ -10,6 +10,8 @@ curl -fsSL https://raw.githubusercontent.com/Adam-Antios/environment-bootstrap/r
 
 ## Send Pull Request
 
+This script is intended only for the `records` directory of the ISMS-PIMS project.
+
 To create a branch for one file and commit it with the filename as the commit message, thus initiating a pull request, run the following:
 
 ```bash

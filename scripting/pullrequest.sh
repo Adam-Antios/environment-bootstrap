@@ -6,6 +6,15 @@ if [ "$#" -ne 0 ]; then
   exit 1
 fi
 
+required_root="$HOME/Compliance/records"
+
+if [ ! -d "$required_root/.git" ]; then
+  echo "Repository does not exist: $required_root" >&2
+  exit 1
+fi
+
+cd "$required_root"
+
 mapfile -t changed_files < <(git status --porcelain --untracked-files=normal | sed 's/^...//')
 
 if [ "${#changed_files[@]}" -ne 1 ]; then
