@@ -20,10 +20,12 @@ fi
 
 cd "$required_root"
 
-mapfile -t changed_files < <(git status --porcelain --untracked-files=normal | sed 's/^...//')
+mapfile -t changed_files < <(git status --porcelain=v1 --untracked-files=normal | cut -c4-)
 
 if [ "${#changed_files[@]}" -ne 1 ]; then
   echo "Expected exactly 1 changed file, found ${#changed_files[@]}." >&2
+  printf 'Changed files:\n' >&2
+  printf '  %s\n' "${changed_files[@]}" >&2
   exit 1
 fi
 
@@ -37,3 +39,5 @@ git switch -c "$branch"
 git add "$file"
 git commit -m "Add ${dir} ${name_without_extension}"
 git push -u origin HEAD
+git switch main
+git branch -d "$branch"
