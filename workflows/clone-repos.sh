@@ -51,6 +51,7 @@ compliance_repos=(
     "pdneurotechnology@vs-ssh.visualstudio.com:v3/pdneurotechnology/ISMS-PIMS/records"
     "pdneurotechnology@vs-ssh.visualstudio.com:v3/pdneurotechnology/ISMS-PIMS/develop"
     "pdneurotechnology@vs-ssh.visualstudio.com:v3/pdneurotechnology/ISMS-PIMS/release"
+    "pdneurotechnology@vs-ssh.visualstudio.com:v3/pdneurotechnology/ISMS-PIMS/scripts"
 )
 
 for repo in "${compliance_repos[@]}"; do
