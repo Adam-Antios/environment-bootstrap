@@ -1,7 +1,6 @@
 # ---------------------------------------------------------------------------
-# This script commits all changes on the work branch using the current
-# ISO-8601 timestamp, pushes it to origin, then returns to main and deletes
-# the local work branch.
+# This script is intended only for creating pull requests within the
+# ISMS-PIMS /release Git repository.
 # ---------------------------------------------------------------------------
 
 #!/usr/bin/env bash
